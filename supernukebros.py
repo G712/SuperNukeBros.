@@ -13,3 +13,15 @@ class Mario(Object):
         self.speed += self.accel
 
         super().update()
+        #screeninfo = pygame.display.Info()
+        #self.image_rect.move_ip(self.Speedy)
+        #width = screeninfo.current_w
+        #height = screeninfo.current_h
+        #if self.image_rect.right > width:
+            #self.Speedy.x *= -1
+        #if self.image_rect.left < 0:
+            #self.Speedy.x *= -1
+        #if self.image_rect.top < 0:
+            #self.Speedy.y *= -1
+        #if self.image_rect.bottom > height:
+            #self.Speedy.y *= -1

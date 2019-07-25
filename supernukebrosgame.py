@@ -1,5 +1,7 @@
 import pygame
+import random
 from supernukebros import Mario
+from nukebro import Nuke
 
 pygame.init()
 screen_info = pygame.display.Info()
@@ -13,7 +15,11 @@ screen_size = (screen_width, screen_height) =\
 screen = pygame.display.set_mode(screen_size)
 clock = pygame.time.Clock()
 SuperMario = Mario((120, 120))
-
+enemies = pygame.sprite.Group()
+enemies.empty()
+for i in range(50):
+    enemies.add(Nuke((random.randint(50, screen_width - 50),
+                       random.randint(50, screen_height))))
 def main():
     while True:
 
@@ -42,7 +48,12 @@ def main():
         SuperMario.update()
         screen.fill((52, 235, 140))
         SuperMario.draw(screen)
+        enemies.draw(screen)
         pygame.display.flip()
 
 if __name__ == "__main__":
     main()
+
+
+
+
