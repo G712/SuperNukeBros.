@@ -18,10 +18,18 @@ if choice2 == "REST":
     print("The monsters have arrived.")
     choice3 = input("Will you FIGHT? Or maybe HIDE.")
     if choice3 == "FIGHT":
-        print("You run to the village gates, but you are tired from")
+        print("You run to the village gates, but you are still waking up slowly.")
+        print("You grab a bow and arrow. PEW! You strike down ")
 if choice2 == "PREPARE":
     print("You train in the the town's battle center.")
     print("After 3 hours, you take a quick break.")
     print("You feel like you could face anything after this training session.")
     print("You hear a gong being rung. It is the monster warning bell.")
     choice4 = input("Will you use a SWORD or a BOW and arrow?")
+    if choice4 == "SWORD":
+        print("You arm yourself with a sword.")
+        print("You run past the village gates and attack the incoming hoard.")
+        print("But you know you are doomed.")
+        print("A huge kobald strikes you down.")
+        print("GAME OVER.")
+        exit()
